@@ -1,0 +1,34 @@
+GET http://localhost:5170/todos
+
+###
+GET http://localhost:5170/todos/3
+
+###
+POST http://localhost:5170/todos
+Content-Type: application/json
+
+{
+   "task": "Learn .NET Minimal API", 
+    "isComplete": false
+}
+
+###
+POST http://localhost:5170/todos/2
+Content-Type: application/json
+
+{
+   "task": ".NET Minimal API", 
+    "isComplete": true
+}
+
+###
+PUT http://localhost:5170/todos/1
+Content-Type: application/json
+
+{
+    "task": "Master .NET Minimal API", 
+    "isComplete": true
+}
+
+###
+DELETE http://localhost:5170/todos/2
